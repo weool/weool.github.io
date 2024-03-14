@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.gl{
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/84/China_Travel_China_Tour_China.jpg);
+height: 80vh;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.block{
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+background-image: url(https://traveltimes.ru/wp-content/uploads/2021/07/pravda-o-populyarnyx-dostoprimechatelnostyax-17.jpg);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.yaz{
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+background-image: url(https://vuzopedia.ru/storage/app/uploads/public/61f/c98/e1d/61fc98e1d5366033234890.jpg);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.kyh{
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+background-image: url(https://portal.edu.asu.ru/pluginfile.php/804304/course/section/118138/original.jpg);
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+.flg{
+background: url(https://psv4.userapi.com/c236331/u318888391/docs/d14/1e92939d19e8/Group_2.png?extra=fIPIugmhlXI0KgMwtvYpz3j7FM8CRtyLjuiIZjWnrx7RQcgeTRaVZ2IB53t2cHy5bliZBzvZFJ6XCSsWgpXbnLYUQeqXt7-VddnLTQiF4MWVKiP4eAvEn5u3MeD1jFJprA4I4OX9fkYph0pVtMkzsaw.png);
+position: absolute;
+width: 385px;
+height: 189.04px;
+}
+
+.fonts{
+position: absolute;
+top: 30vh;
+left: 5px;
+
+background: url(https://psv4.userapi.com/c237231/u318888391/docs/d28/0db757836d52/Mask_group.png?extra=hR9UbifknEdXY-Nxe6npF7YqgqBvc6tYoZFBJjnnypNPztzAiK5LVDFabwCD9lg6-q-TIMAInKwz_13-oW3q_QYMya7269DNFfJqFqyW5AdDsotyj3oA7fIIpTkAMlDnfDKs4y4IVwCcp9yt2A7lE-Zf.png);
+width: 1255.13px;
+height: 275.71px;
+
+}
+.ist{
+
+position: absolute;
+width: 686px;
+height: 172px;
+left: 50vh;
+top: 120vh;
+
+font-family: 'Fira Sans Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 185px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.yazi{
+
+position: absolute;
+width: 686px;
+height: 172px;
+left: 50vh;
+top: 220vh;
+
+font-family: 'Fira Sans Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 185px;
+text-align: center;
+color: #FFFFFF;
+}
+.kyhi{
+
+position: absolute;
+width: 686px;
+height: 172px;
+left: 50vh;
+top: 320vh;
+
+font-family: 'Fira Sans Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 185px;
+text-align: center;
+color: #FFFFFF;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 300px;
+  background: rgba(0,0,0, 0.0)
+}
+.rockets{
+  width: 90vh;
+  height: 100px;
+  transition-duration: 10s;
+  transition-property: transform;
+  display: flex;
+  align-items: center;
+}
+.rockets img{
+  height: 60vh;
+}
+.container: .rockets{
+  transform: translateX(100vh);
+}
+.container:hover .rockets{
+  transform: translateX(100vh);
+}
+.rocket-1{
+  transition-timing-function: linear;
+}
