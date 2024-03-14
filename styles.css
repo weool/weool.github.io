@@ -301,6 +301,9 @@ font-size: 3vh;
     .number-item {
         font-size: 23px;
     }
+	.glav{
+		height: 50%
+	}
     .header-title{
         margin: auto 40px;
         margin-top: 15%;
