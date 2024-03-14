@@ -280,6 +280,7 @@ font-size: 3vh;
         margin: auto 40px;
         margin-top: 15%;
         padding-bottom: 20px
+	font-size: 7vh;
     }
 
 }
@@ -303,5 +304,6 @@ font-size: 3vh;
     .header-title{
         margin: auto 40px;
         margin-top: 15%;
+	font-size: 5vh;
     }
     }
