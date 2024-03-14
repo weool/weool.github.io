@@ -1,0 +1,307 @@
+*,*:before, *:after{
+	box-sizing: border-box;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.font{
+    font-size: 150%;
+    color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body{
+	margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+}
+html,body{
+    height: 100%;
+}
+.container {
+    margin: 0px 5%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+}
+button {
+  position: relative;
+  margin: 0;
+  padding: 0.8em 1em;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  
+}
+
+button:hover {
+  animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+button::before,
+button::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #3E0106;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+button:hover::before,
+button:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+button:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+
+.glav{
+background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612915035_124-p-krasnii-yaponskii-fon-189.jpg);
+height: 80%; 
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.header_wrapper{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+}
+.nav__link{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.header-down {
+    position: relative;
+    margin-left: -4%;
+}
+
+.header-title {
+    color: white;
+    font-size: 10vh;
+    font-weight: 400;
+
+    text-align: left;
+    left: 0;
+
+    margin-top: 20%;
+    margin-bottom: 0px;
+    margin: 0px 0%;
+}
+
+.header-suptitle {
+    color: #fff;
+    font-size: 18px;
+}
+head{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
+}
+/*карточки*/
+
+
+.cards-holder {
+    display: flex;
+    justify-content: space-between;
+}
+.cards{
+
+}
+
+.card {
+	padding-top: 35vh;
+    width: 50vh;
+    box-shadow: 1% 1% 4% 2% #0000001A;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -5vh;
+    padding: 10px 10px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+
+.card-title {
+     display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    font-size: 26px;
+    font-weight: 400;
+
+}
+
+.card-title span {
+    color: red;
+    margin-left: 2px;
+}
+
+.card-desc {
+    text-align: center;
+    font-size: 3%;
+    font-weight: 400;
+    color: #656363;
+}
+.nav{
+font-size: 3vh;
+}
+@media (max-width: 1600px) {
+    .header-title {
+        margin: auto 40px;
+        margin-top: 7%;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1300px) {
+
+    .header-title {
+        margin: auto 40px;
+        margin-top: 10%;
+    }
+
+    .header-suptitle:before,
+    .header-suptitle:after {
+        content: none;
+    }
+
+
+    .block-holder {
+        display: block;
+    }
+
+
+
+    .history-images {
+        display: none;
+    }
+
+    .history-title,
+    .history-desc,
+    .history-number {
+        width: auto;
+    }
+}
+
+
+
+@media (max-width: 1185px) {
+    .cart,
+    .header-line {
+        justify-content: space-between;
+    }
+    .header-title{
+        margin: auto 40px;
+        margin-top: 10%;
+    }
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .cards-holder {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+        .header-title{
+        margin: auto 40px;
+        margin-top: 15%;
+        padding-bottom: 20px
+    }
+
+}
+
+
+
+
+@media (max-width: 780px) {
+
+    .high {
+        display: none;
+    }
+
+    .container {
+        margin: auto 40px;
+    }
+
+    .number-item {
+        font-size: 23px;
+    }
+    .header-title{
+        margin: auto 40px;
+        margin-top: 15%;
+    }
+    }
